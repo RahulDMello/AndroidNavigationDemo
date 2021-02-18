@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/flow3Fragment1"
         android:name="com.example.flow3.Flow3Fragment1"
-        android:label="fragment_flow31"
+        android:label="Implicit Deep Link"
         tools:layout="@layout/fragment_flow31" />
 </navigation>

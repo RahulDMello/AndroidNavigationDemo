@@ -3,6 +3,7 @@ package com.example.navigationdemo
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -20,14 +21,20 @@ class MainActivity : AppCompatActivity() {
         val topLevelDestinations = setOf(
             R.id.flow1Fragment1,
             R.id.flow2MainFragment,
-            R.id.flow3Fragment1
+            R.id.flow3Fragment1,
+            R.id.flow4Fragment1
         )
         appBarConfiguration = AppBarConfiguration(topLevelDestinations, findViewById<DrawerLayout>(R.id.drawer_layout))
         setupActionBarWithNavController(navController, appBarConfiguration)
         findViewById<NavigationView>(R.id.nav_view)
             .setupWithNavController(navController)
-        findViewById<BottomNavigationView>(R.id.bottom_nav)
-            .setupWithNavController(navController)
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav).apply {
+            setupWithNavController(navController)
+        }
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            bottomNav.isVisible = destination.id != R.id.flow4Fragment1
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

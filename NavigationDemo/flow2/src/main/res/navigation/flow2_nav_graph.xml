@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/flow2MainFragment"
         android:name="com.example.flow2.Flow2MainFragment"
-        android:label="fragment_flow2_main"
+        android:label="View Pager With Tab Layout"
         tools:layout="@layout/fragment_flow2_main" />
 </navigation>

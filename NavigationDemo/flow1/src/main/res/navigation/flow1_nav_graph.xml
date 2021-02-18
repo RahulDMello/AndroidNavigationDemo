@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/flow1Fragment1"
         android:name="com.example.flow1.Flow1Fragment1"
-        android:label="fragment_flow11"
+        android:label="Regular Flow"
         tools:layout="@layout/fragment_flow11" >
         <action
             android:id="@+id/action_flow1Fragment1_to_flow1Fragment2"

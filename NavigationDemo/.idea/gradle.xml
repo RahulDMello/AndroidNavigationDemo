@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/flow1" />
             <option value="$PROJECT_DIR$/flow2" />
             <option value="$PROJECT_DIR$/flow3" />
+            <option value="$PROJECT_DIR$/flow4" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

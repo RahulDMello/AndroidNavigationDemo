@@ -1,0 +1,7 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="flow_4_fragment_1">Flow 4 Fragment 1</string>
+    <string name="flow_4_fragment_2">Flow 4 Fragment 2</string>
+    <string name="next">Next</string>
+</resources>

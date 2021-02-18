@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flow4_nav_graph"
+    app:startDestination="@id/flow4Fragment1">
+
+    <fragment
+        android:id="@+id/flow4Fragment1"
+        android:name="com.example.flow4.Flow4Fragment1"
+        android:label="No Bottom Bar"
+        tools:layout="@layout/fragment_flow41" >
+        <action
+            android:id="@+id/action_flow4Fragment1_to_flow4Fragment2"
+            app:destination="@id/flow4Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/flow4Fragment2"
+        android:name="com.example.flow4.Flow4Fragment2"
+        android:label="fragment_flow42"
+        tools:layout="@layout/fragment_flow42" />
+</navigation>

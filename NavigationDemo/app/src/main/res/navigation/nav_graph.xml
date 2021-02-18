@@ -7,4 +7,6 @@
     <include app:graph="@navigation/flow1_nav_graph" />
 
     <include app:graph="@navigation/flow2_nav_graph" />
+
+    <include app:graph="@navigation/flow3_nav_graph" />
 </navigation>

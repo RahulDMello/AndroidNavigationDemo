@@ -18,5 +18,9 @@
         android:id="@+id/flow1Fragment2"
         android:name="com.example.flow1.Flow1Fragment2"
         android:label="fragment_flow12"
-        tools:layout="@layout/fragment_flow12" />
+        tools:layout="@layout/fragment_flow12">
+        <deepLink
+            app:action="VIEW"
+            app:uri="www.navigationdemo.com/flow1/fragment2" />
+    </fragment>
 </navigation>

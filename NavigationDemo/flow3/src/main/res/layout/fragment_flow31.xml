@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Flow1Fragment1">
+    tools:context=".Flow3Fragment1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/flow_1_fragment_1" />
+        android:text="@string/flow_3_fragment_1" />
 
     <Button
         android:id="@+id/next"

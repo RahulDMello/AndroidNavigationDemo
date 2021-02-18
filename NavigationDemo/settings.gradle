@@ -1,3 +1,4 @@
+include ':flow2'
 include ':flow1'
 include ':app'
 rootProject.name = "NavigationDemo"

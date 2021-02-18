@@ -4,9 +4,9 @@
         android:id="@+id/flow1_nav_graph"
         android:title="@string/flow_1" />
     <item
-        android:id="@+id/flow2"
+        android:id="@+id/flow2_nav_graph"
         android:title="@string/flow_2" />
     <item
-        android:id="@+id/flow3"
+        android:id="@+id/flow3_nav_graph"
         android:title="@string/flow_3" />
 </menu>

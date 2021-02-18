@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val navController = (supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment).navController
         val topLevelDestinations = setOf(
-            R.id.flow1Fragment1
+            R.id.flow1Fragment1,
+            R.id.flow2Fragment1
         )
         appBarConfiguration = AppBarConfiguration(topLevelDestinations, findViewById<DrawerLayout>(R.id.drawer_layout))
         setupActionBarWithNavController(navController, appBarConfiguration)

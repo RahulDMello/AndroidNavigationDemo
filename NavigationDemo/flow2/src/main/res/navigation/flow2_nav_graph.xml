@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/flow2_nav_graph"
-    app:startDestination="@id/flow2Fragment1">
+    app:startDestination="@id/flow2MainFragment">
 
     <fragment
-        android:id="@+id/flow2Fragment1"
-        android:name="com.example.flow2.Flow2Fragment1"
-        android:label="fragment_flow21"
-        tools:layout="@layout/fragment_flow21" />
+        android:id="@+id/flow2MainFragment"
+        android:name="com.example.flow2.Flow2MainFragment"
+        android:label="fragment_flow2_main"
+        tools:layout="@layout/fragment_flow2_main" />
 </navigation>

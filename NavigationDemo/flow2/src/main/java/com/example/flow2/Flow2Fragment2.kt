@@ -1,12 +1,10 @@
-package com.example.flow1
+package com.example.flow2
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -15,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Flow1Fragment1.newInstance] factory method to
+ * Use the [Flow2Fragment2.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Flow1Fragment1 : Fragment() {
+class Flow2Fragment2 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,14 +34,7 @@ class Flow1Fragment1 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_flow11, container, false)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        view.findViewById<Button>(R.id.next).setOnClickListener {
-            findNavController().navigate(Flow1Fragment1Directions.actionFlow1Fragment1ToFlow1Fragment2())
-        }
+        return inflater.inflate(R.layout.fragment_flow22, container, false)
     }
 
     companion object {
@@ -51,18 +42,11 @@ class Flow1Fragment1 : Fragment() {
          * Use this factory method to create a new instance of
          * this fragment using the provided parameters.
          *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Flow1Fragment1.
+         * @return A new instance of fragment Flow2Fragment2.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Flow1Fragment1().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+        fun newInstance() =
+            Flow2Fragment2()
     }
 }

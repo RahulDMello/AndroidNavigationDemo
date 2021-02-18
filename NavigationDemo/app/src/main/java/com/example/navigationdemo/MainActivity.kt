@@ -1,12 +1,9 @@
 package com.example.navigationdemo
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.appcompat.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.FragmentContainerView
-import androidx.fragment.app.findFragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.*
@@ -22,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val navController = (supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment).navController
         val topLevelDestinations = setOf(
             R.id.flow1Fragment1,
-            R.id.flow2Fragment1
+            R.id.flow2MainFragment
         )
         appBarConfiguration = AppBarConfiguration(topLevelDestinations, findViewById<DrawerLayout>(R.id.drawer_layout))
         setupActionBarWithNavController(navController, appBarConfiguration)
